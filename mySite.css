@@ -1,0 +1,18 @@
+#stats {
+    padding-top: 30px;
+}
+
+#stats > *{
+    margin: 5px;
+
+}
+
+#stats > label{
+    width: 70px;
+    text-align: left;
+    display: inline-block;
+}
+
+#stats>:hover{
+    color: blue;
+}

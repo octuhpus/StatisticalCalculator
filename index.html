@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="mySite.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div>
+    <h2>Statistical Calculator</h2>
+    <p>Enter 5 to 20 numbers(ranging between 0 and 100).</p>
+    <p>Exactly one (1) space must separate each number.</p>
+  </div>
+
+  <div>
+    <form onSubmit="performStatistics();">
+      <textarea id="input" name="input" rows="4" cols="50">58 62 90 72 92 40 13</textarea>
+      <br>
+
+      <button type="submit">Submit</button>
+      <input type="reset">
+
+      <div id="stats">
+        <label for="max">Max:</label>
+        <input type="text" id="max" readonly>
+        <br>
+
+        <label for="min">Min:</label>
+        <input type="text" id="min" readonly>
+        <br>
+
+        <label for="mean">Mean:</label>
+        <input type="text" id="mean" readonly>
+        <br>
+
+        <label for="median">Median:</label>
+        <input type="text" id="median" readonly>
+        <br>
+
+        <label for="mode">Mode:</label>
+        <input type="text" id="mode" readonly>
+        <br>
+
+        <label for="stDiv">Std Dev:</label>
+        <input type="text" id="stDiv" readonly>
+        <br>
+
+        <label for="sum">Sum:</label>
+        <input type="text" id="sum" readonly>
+        <br>
+
+        <label for="var">Variance:</label>
+        <input type="text" id="var" readonly>
+      </div>
+    </form>
+  </div>
+</body>
+<footer>
+  <div>
+    <nav>
+      <p><a href = "../">ePortfolio</a></p>
+    </nav>
+  </div>
+</footer>
+</html>
